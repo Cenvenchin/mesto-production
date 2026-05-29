@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-b1fHhSN8.js"></script>
+    <script type="module" crossorigin src="./assets/index-D3OgpBze.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DKwl_nIp.css">
   </head>
   <body class="page">
@@ -53,6 +53,10 @@
                 minlength="2"
                 maxlength="40"
                 pattern="^[A-Za-zА-Яа-яЁё\\-\\s]+$"
+                data-required-message="Вы пропустили это поле."
+                data-too-short-message="Минимальная длина — 2 символа."
+                data-too-long-message="Максимальная длина — 40 символов."
+                data-pattern-message="Разрешены только латинские и кириллические буквы, знаки дефиса и пробелы."
                 required
               />
               <span class="popup__error user-name-error"></span>
@@ -66,6 +70,9 @@
                 placeholder="Занятие"
                 minlength="2"
                 maxlength="200"
+                data-required-message="Вы пропустили это поле."
+                data-too-short-message="Минимальная длина — 2 символа."
+                data-too-long-message="Максимальная длина — 200 символов."
                 required
               />
               <span class="popup__error user-description-error"></span>
@@ -96,6 +103,10 @@
                 minlength="2"
                 maxlength="30"
                 pattern="^[A-Za-zА-Яа-яЁё\\-\\s]+$"
+                data-required-message="Вы пропустили это поле."
+                data-too-short-message="Минимальная длина — 2 символа."
+                data-too-long-message="Максимальная длина — 30 символов."
+                data-pattern-message="Разрешены только латинские и кириллические буквы, знаки дефиса и пробелы."
                 required
               />
               <span class="popup__error place-name-error"></span>
@@ -107,6 +118,8 @@
                 id="place-link"
                 class="popup__input popup__input_type_url"
                 placeholder="Ссылка на картинку"
+                data-required-message="Вы пропустили это поле."
+                data-type-message="Введите адрес сайта."
                 required
               />
               <span class="popup__error place-link-error"></span>
@@ -157,6 +170,8 @@
                 id="user-avatar"
                 class="popup__input popup__input_type_avatar"
                 placeholder="Ссылка на изображение"
+                data-required-message="Вы пропустили это поле."
+                data-type-message="Введите адрес сайта."
                 required
               />
               <span class="popup__error user-avatar-error"></span>
